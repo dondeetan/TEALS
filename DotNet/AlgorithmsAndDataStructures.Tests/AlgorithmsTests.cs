@@ -13,7 +13,9 @@ namespace AlgorithmsAndDataStructures.Tests
         [Test]
         public void ValidateFindMaxCharacters()
         {
-            MaxCharacters.FindMaxCharacters("Hello There!");            
+            var results = MaxCharacters.FindMaxCharacters("Hello There!");
+            Assert.IsTrue(results.Item1 == 'e');
+            Assert.IsTrue(results.Item2 == 3);             
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace AlgorithmsAndDataStructures.Algorithms
@@ -5,11 +6,11 @@ namespace AlgorithmsAndDataStructures.Algorithms
     public class MaxCharacters
     {
         public MaxCharacters(){}
-        public static void FindMaxCharacters(string input){
+        public static Tuple<char,int> FindMaxCharacters(string input){
             var dictionary = new Dictionary<char,int>();
             var characters = input.ToCharArray();
             var maxcount = 0;
-            char maxchar;  
+            char maxchar = ' ';
             foreach(char character in characters){
                 if (!dictionary.ContainsKey(character)){
                     dictionary.Add(character, 1);
@@ -25,7 +26,8 @@ namespace AlgorithmsAndDataStructures.Algorithms
                     maxcount = dictionaryentry.Value;
                     maxchar = dictionaryentry.Key;
                 }
-            }           
+            }  
+            return new Tuple<char, int>(maxchar,maxcount);         
         }
     }
 }
