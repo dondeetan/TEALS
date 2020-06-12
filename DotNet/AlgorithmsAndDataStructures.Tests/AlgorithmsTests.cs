@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using AlgorithmsAndDataStructures.Algorithms;
+using System;
 
 namespace AlgorithmsAndDataStructures.Tests
 {
@@ -30,6 +31,17 @@ namespace AlgorithmsAndDataStructures.Tests
         {
             var results = ReversString.ReverseStringSolution1("apple");
             Assert.IsTrue(results == "elppa");            
+        }
+
+         [Test]
+        public void ValidateFizzBuzz_Solution1_PrintsFizzBuzz()
+        {
+            int[] intarray = new int[50];
+            for (int i = 0; i < intarray.Length ; i++)
+            {
+                intarray[i] = i + 1;
+            }            
+            FizzBuzz.FindFizzbuzz(intarray);           
         }
     }
 }
