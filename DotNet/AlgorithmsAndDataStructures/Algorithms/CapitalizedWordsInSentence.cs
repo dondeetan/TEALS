@@ -11,7 +11,10 @@ namespace AlgorithmsAndDataStructures.Algorithms
         public static string CapitalizeWordsinSentence(string defaultsentence){
              var capitalizedwords = new List<string>();
             defaultsentence.Split(' ').ToList().ForEach(word => {
-                capitalizedwords.Add(word[0].ToString().ToUpper() + word.Substring(1, word.Length -1));
+                //Old Way (Not Using Indexer)
+                //capitalizedwords.Add(word[0].ToString().ToUpper() + word.Substring(1, word.Length -1));
+                //Using Indexers: 
+                capitalizedwords.Add(word[0].ToString().ToUpper() + word[1..^0]);
             });
             return String.Join(" ", capitalizedwords);
         }
