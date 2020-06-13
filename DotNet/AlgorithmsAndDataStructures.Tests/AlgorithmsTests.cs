@@ -2,6 +2,8 @@ using NUnit.Framework;
 using AlgorithmsAndDataStructures.Algorithms;
 using System;
 using System.Linq;
+using System.Text;
+using System.Collections.Generic;
 
 namespace AlgorithmsAndDataStructures.Tests
 {
@@ -77,10 +79,11 @@ namespace AlgorithmsAndDataStructures.Tests
         public void ValidateAnagrams_Solution1_ReturnsTrue()
         {
             //Arrange and Act
-           
-
+            string sentence = "hello there my dear";        
+            var results = CapitalizedWordsInSentence.CapitalizeWordsinSentence(sentence);
 
             //Assert
+            Assert.IsTrue(results == "Hello There My Dear");
         }
     }
 }
