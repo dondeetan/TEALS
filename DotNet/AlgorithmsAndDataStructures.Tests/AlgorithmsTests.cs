@@ -86,23 +86,29 @@ namespace AlgorithmsAndDataStructures.Tests
             Assert.IsTrue(results == "Hello There My Dear");
         }
 
+          [Test]
+        public void ValidateSteps_Solution1_ReturnsTrue()
+        {
+            //Arrange and Act
+            int[,] results = Steps.PrintSteps(3);            
+
+            //Assert
+            //To assert, we take the two dimensional array value which is the int (decimal) value of the char and compare to the actual character value
+            //Row 1 Column 1 = #
+            Assert.IsTrue(Convert.ToChar(results[0,0]) == '#');
+            //Row 3 Column 3 = #
+            Assert.IsTrue(Convert.ToChar(results[2,2]) == '#');
+            //Row 2 Column 3 = Empty Space
+            Assert.IsTrue(Convert.ToChar(results[1,2]) == ' ');
+            //Row 1 Column 2 = Empty Space
+            Assert.IsTrue(Convert.ToChar(results[0,1]) == ' ');
+        }
+
+
         [Test,Category("PlaceHolder")]
         public void Placeholder()
         {
-            string[] words = new string[]
-            {
-                            // index from start    index from end
-                "The",      // 0                   ^9
-                "quick",    // 1                   ^8
-                "brown",    // 2                   ^7
-                "fox",      // 3                   ^6
-                "jumped",   // 4                   ^5
-                "over",     // 5                   ^4
-                "the",      // 6                   ^3
-                "lazy",     // 7                   ^2
-                "dog"       // 8                   ^1
-            }; 
-            Console.WriteLine($"The last word is {words[^1]}");
+          int[,] results = Steps.PrintSteps(3);         
         }
     }
 }
