@@ -55,7 +55,7 @@ namespace AlgorithmsAndDataStructures.Tests
             FizzBuzz.FindFizzbuzz(intarray);           
         }
 
-          [Test]
+        [Test]
         public void ValidateChunkArray_Solution1_ReturnsNChunks()
         {
             //Arrange and Act
@@ -71,6 +71,16 @@ namespace AlgorithmsAndDataStructures.Tests
             //Assert
             // With 100 items and chunknumber (n) of 10, the result should be 10 chunks
             Assert.IsTrue(chunks.Length == 10);
+        }
+
+        [Test]
+        public void ValidateAnagrams_Solution1_ReturnsTrue()
+        {
+            //Arrange and Act
+           
+
+
+            //Assert
         }
     }
 }

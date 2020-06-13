@@ -17,7 +17,7 @@ namespace AlgorithmsAndDataStructures.Algorithms
                 }
                 else
                 {
-                    dictionary[character] += 1;
+                    ++dictionary[character];
                 }
             } 
 
