@@ -86,11 +86,11 @@ namespace AlgorithmsAndDataStructures.Tests
             Assert.IsTrue(results == "Hello There My Dear");
         }
 
-          [Test]
+        [Test]
         public void ValidateSteps_Solution1_ReturnsTrue()
         {
             //Arrange and Act
-            int[,] results = Steps.PrintSteps(3);            
+            int[,] results = Steps.PrintSteps(5);            
 
             //Assert
             //To assert, we take the two dimensional array value which is the int (decimal) value of the char and compare to the actual character value
@@ -104,11 +104,16 @@ namespace AlgorithmsAndDataStructures.Tests
             Assert.IsTrue(Convert.ToChar(results[0,1]) == ' ');
         }
 
+         [Test]
+        public void  ValidateSteps_Solution2_ReturnsTrue()
+        {
+             Steps.PrintStepsRecusion(5);
+        }
 
         [Test,Category("PlaceHolder")]
         public void Placeholder()
         {
-          int[,] results = Steps.PrintSteps(3);         
+            Steps.PrintStepsRecusion(5);
         }
     }
 }

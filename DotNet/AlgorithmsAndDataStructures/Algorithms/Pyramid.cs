@@ -3,17 +3,18 @@ using System.Linq;
 
 namespace AlgorithmsAndDataStructures.Algorithms
 {
-    public class Steps
+    public class Pyramid
     {
-        //Print the following stairs including empty spaces  
-        //"#  "
-        //"## "
-        //"###"
-        public Steps(){}
+        //Print the following pyramid
+        //  "#"
+        // "###"
+        //"#####"
+        public Pyramid(){}
 
-        public static int[,] PrintSteps(int number){
+        public static int[,] PrintPyramid(int number){
             //Use 2 Dimensional Array to hold values for # and Empty Spaces
-            int[,] twodimensionalarray = new int [number,number];
+            //Here we multiply the column by the number * 2 then minus 1
+            int[,] twodimensionalarray = new int [number,(number * 2) - 1];
             //Initialize the row
             for (int row = 0; row < twodimensionalarray.GetLength(0); row++)
             {
