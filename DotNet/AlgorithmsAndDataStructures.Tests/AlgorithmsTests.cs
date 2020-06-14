@@ -113,7 +113,7 @@ namespace AlgorithmsAndDataStructures.Tests
         [Test,Category("PlaceHolder")]
         public void Placeholder()
         {
-            Steps.PrintStepsRecusion(5);
+            Pyramid.PrintPyramid(3);
         }
     }
 }
