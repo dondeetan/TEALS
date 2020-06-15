@@ -104,16 +104,56 @@ namespace AlgorithmsAndDataStructures.Tests
             Assert.IsTrue(Convert.ToChar(results[0,1]) == ' ');
         }
 
-         [Test]
+        [Test]
         public void  ValidateSteps_Solution2_ReturnsTrue()
         {
              Steps.PrintStepsRecusion(5);
         }
 
+         [Test]
+        public void ValidateSprialMatrix_Solution1_ReturnsTrue()
+        {
+            //Arrange
+            int matrixcount = 5;
+           
+            //Act
+            var spiralmatrix = SpiralMatrix.GenerateSpiralMatric(matrixcount);
+
+            //Assert
+            //Print Values:
+            for (int row = 0; row < spiralmatrix.GetLength(0); row++)
+            {                 
+                //Initialize the column
+                for (int column = 0; column < spiralmatrix.GetLength(1); column++)
+                {
+                  Console.Write($"\t{spiralmatrix[row,column]}");
+                }                     
+                Console.WriteLine();            
+            }
+            Assert.IsTrue(spiralmatrix[2,2] == 25);
+        }
+
         [Test,Category("PlaceHolder")]
         public void Placeholder()
         {
-            Pyramid.PrintPyramid(3);
+            //Arrange
+            int matrixcount = 5;
+           
+            //Act
+            var spiralmatrix = SpiralMatrix.GenerateSpiralMatric(matrixcount);
+
+            //Assert
+            //Print Values:
+            for (int row = 0; row < spiralmatrix.GetLength(0); row++)
+            {                 
+                //Initialize the column
+                for (int column = 0; column < spiralmatrix.GetLength(1); column++)
+                {
+                  Console.Write($"\t{spiralmatrix[row,column]}");
+                }                     
+                Console.WriteLine();
+                
+            }
         }
     }
 }
