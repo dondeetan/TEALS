@@ -110,7 +110,7 @@ namespace AlgorithmsAndDataStructures.Tests
              Steps.PrintStepsRecusion(5);
         }
 
-         [Test]
+        [Test]
         public void ValidateSprialMatrix_Solution1_ReturnsTrue()
         {
             //Arrange
@@ -131,6 +131,17 @@ namespace AlgorithmsAndDataStructures.Tests
                 Console.WriteLine();            
             }
             Assert.IsTrue(spiralmatrix[2,2] == 25);
+        }
+
+        [Test]
+        public void ValidateFibonacci_Solution1_ReturnsTrue()
+        {
+            //Arrange and Act
+            var results = Fibonacci.GetFibonacci(6);
+
+            //Assert
+            Assert.IsTrue(results == 8);
+
         }
 
         [Test,Category("PlaceHolder")]
