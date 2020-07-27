@@ -136,8 +136,11 @@ namespace AlgorithmsAndDataStructures.Tests
         [Test]
         public void ValidateFibonacci_Solution1_ReturnsTrue()
         {
+            //
+            int fibonaccinumber = 6;
+
             //Arrange and Act
-            var results = Fibonacci.GetFibonacci(6);
+            var results = Fibonacci.GetFibonacci(fibonaccinumber);
 
             //Assert
             Assert.IsTrue(results == 8);
