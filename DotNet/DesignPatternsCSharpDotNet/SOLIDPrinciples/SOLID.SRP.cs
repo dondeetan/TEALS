@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using static System.Console;
 
-namespace DotNetDesignPatternDemos.SOLID.SRP
+namespace DesignPatternsCSharpDotNet.SOLIDPrinciples.SRP
 {
   // just stores a couple of journal entries and ways of
   // working with them
