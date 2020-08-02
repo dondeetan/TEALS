@@ -1,6 +1,6 @@
 ﻿using static System.Console;
 
-namespace DesignPatternsCSharpDotNet.SOLIDPrinciples.LiskovSubstitutionPrinciple
+namespace DesignPatternsCSharpDotNet.SOLIDPrinciples
 {
   // using a classic example
   public class Rectangle
