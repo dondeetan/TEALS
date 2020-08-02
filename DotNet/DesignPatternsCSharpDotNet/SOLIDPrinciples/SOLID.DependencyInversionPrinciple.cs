@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using static System.Console;
 
-namespace DesignPatternsCSharpDotNet.SOLIDPrinciples
+namespace DesignPatternsCSharpDotNet.SOLIDPrinciples.DIP
 {
   // hl modules should not depend on low-level; both should depend on abstractions
   // abstractions should not depend on details; details should depend on abstractions

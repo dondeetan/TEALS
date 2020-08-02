@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
 
-namespace DotNetDesignPatternDemos.Creational {
+namespace DotNetDesignPatternDemos.Creational.Builder {
   class HtmlElement {
     public string Name, Text;
     public List<HtmlElement> Elements = new List<HtmlElement> ();
@@ -43,6 +43,8 @@ namespace DotNetDesignPatternDemos.Creational {
   }
 
   class HtmlBuilder {
+
+    HtmlElement root = new HtmlElement ();
     private readonly string rootName;
 
     public HtmlBuilder (string rootName) {
@@ -69,8 +71,6 @@ namespace DotNetDesignPatternDemos.Creational {
     public void Clear () {
       root = new HtmlElement { Name = rootName };
     }
-
-    HtmlElement root = new HtmlElement ();
   }
 
   public class Demo {

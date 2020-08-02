@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using static System.Console;
 
-namespace DesignPatternsCSharpDotNet.SOLIDPrinciples
+namespace DesignPatternsCSharpDotNet.SOLIDPrinciples.OCP
 {
   public enum Color
   {

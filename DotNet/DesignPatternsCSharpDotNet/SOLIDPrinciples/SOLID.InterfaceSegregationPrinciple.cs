@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DesignPatternsCSharpDotNet.SOLIDPrinciples
+namespace DesignPatternsCSharpDotNet.SOLIDPrinciples.ISP
 {
   public class Document
   {

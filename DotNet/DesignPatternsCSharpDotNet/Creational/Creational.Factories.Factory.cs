@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DotNetDesignPatternDemos.Creational {
+namespace DotNetDesignPatternDemos.Creational.Factory {
   public class Point {
     private double x, y;
 

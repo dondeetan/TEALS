@@ -1,6 +1,6 @@
 ﻿using static System.Console;
 
-namespace DesignPatternsCSharpDotNet.SOLIDPrinciples
+namespace DesignPatternsCSharpDotNet.SOLIDPrinciples.LSP
 {
   // using a classic example
   public class Rectangle
