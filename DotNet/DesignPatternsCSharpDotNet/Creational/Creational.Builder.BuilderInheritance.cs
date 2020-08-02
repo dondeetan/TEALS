@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 
-namespace DesignPatterns {
+namespace DotNetDesignPatternDemos.Creational {
   public class Person {
     public string Name;
 

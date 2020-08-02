@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
 
-namespace DotNetDesignPatternDemos.Creational.Builder {
+namespace DotNetDesignPatternDemos.Creational {
   class HtmlElement {
     public string Name, Text;
     public List<HtmlElement> Elements = new List<HtmlElement> ();

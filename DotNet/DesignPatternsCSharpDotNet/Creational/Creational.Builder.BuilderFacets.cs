@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
 
-namespace DotNetDesignPatternDemos.Creational.BuilderFacets {
+namespace DotNetDesignPatternDemos.Creational {
   public class Person {
     // address
     public string StreetAddress, Postcode, City;

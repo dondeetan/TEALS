@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DotNetDesignPatternDemos.Creational.Builder {
+namespace DotNetDesignPatternDemos.Creational {
   public class Person {
     public string Name, Position;
   }
