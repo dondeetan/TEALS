@@ -144,30 +144,20 @@ namespace AlgorithmsAndDataStructures.Tests
 
             //Assert
             Assert.IsTrue(results == 8);
-
         }
 
+        // dotnet test -v n --filter TestCategory=PlaceHolder
         [Test,Category("PlaceHolder")]
         public void Placeholder()
         {
             //Arrange
-            int matrixcount = 5;
+            string input = "ABC";
            
             //Act
-            var spiralmatrix = SpiralMatrix.GenerateSpiralMatric(matrixcount);
+            StringPermutations.Permutate(input,0,input.Length - 1);
 
             //Assert
             //Print Values:
-            for (int row = 0; row < spiralmatrix.GetLength(0); row++)
-            {                 
-                //Initialize the column
-                for (int column = 0; column < spiralmatrix.GetLength(1); column++)
-                {
-                  Console.Write($"\t{spiralmatrix[row,column]}");
-                }                     
-                Console.WriteLine();
-                
-            }
         }
     }
 }
