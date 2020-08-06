@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Text;
 
 namespace AlgorithmsAndDataStructures.Algorithms
 {
@@ -7,9 +8,9 @@ namespace AlgorithmsAndDataStructures.Algorithms
     {
         
         public StringPermutations(){}
-
+        
         public static void Permutate(string input, int startindex, int endindex){
-            // Base Case
+            
             if (startindex == endindex)
             {
                 Console.WriteLine(input);
@@ -17,9 +18,12 @@ namespace AlgorithmsAndDataStructures.Algorithms
 
             // 2nd Base Case input is ABC. The result should be ABC, ACB, BAC, BCA, CAB, CBA
             for (int index = startindex; index <= endindex; index++){
-                input = swap(input, startindex, index);                
+                
+                input = swap(input, startindex, index);  
+
                 Permutate(input,startindex + 1, endindex);
-                input = swap(input, startindex, index);                                   
+                
+                input = swap(input, startindex, index);                                                   
             }
         }
 
@@ -30,7 +34,8 @@ namespace AlgorithmsAndDataStructures.Algorithms
             char temp = inputswapchars[startindex];
             inputswapchars[startindex] = inputswapchars[nextindex];
             inputswapchars[nextindex] = temp;
-            return new String(inputswapchars);
+            var input = new String(inputswapchars);
+            return input;
         }
     }
 }
