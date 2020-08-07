@@ -146,18 +146,30 @@ namespace AlgorithmsAndDataStructures.Tests
             Assert.IsTrue(results == 8);
         }
 
+          // dotnet test -v n --filter TestCategory=PlaceHolder
+        [Test]
+        public void StringPermutations_Solution1_ReturnsTrue()
+        {
+            //Arrange
+            string input = "ABC";
+           
+            //Act and Assert
+            StringPermutations.Permutate(input,0,input.Length - 1);
+
+        }
         // dotnet test -v n --filter TestCategory=PlaceHolder
         [Test,Category("PlaceHolder")]
         public void Placeholder()
         {
             //Arrange
-            string input = "ABC";
+            string input1 = "abc";
+            string input2 = "abde";
            
             //Act
-            StringPermutations.Permutate(input,0,input.Length - 1);
+            var results = StringCompareEdits.IsEdit(input1,input2);
 
             //Assert
-            //Print Values:
+            Assert.IsTrue(results);
         }
     }
 }
