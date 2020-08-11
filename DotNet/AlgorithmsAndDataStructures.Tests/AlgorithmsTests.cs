@@ -157,6 +157,20 @@ namespace AlgorithmsAndDataStructures.Tests
             StringPermutations.Permutate(input,0,input.Length - 1);
 
         }
+
+         [Test,Category("PlusMinus")]
+        public void PlusMinus_Solution1_ReturnsTrue()
+        {
+            //Arrange
+             var test = new List<int>{1,3,5,7,9,11,13,15,17,19};
+           
+            //Act
+            var results = PlusMinus.plusMult(test);
+
+            //Assert
+            Assert.IsTrue(results == "NEUTRAL");
+        }
+
         // dotnet test -v n --filter TestCategory=PlaceHolder
         [Test,Category("PlaceHolder")]
         public void Placeholder()
