@@ -4,6 +4,7 @@ using System;
 using System.Linq;
 using System.Text;
 using System.Collections.Generic;
+using System.Collections;
 
 namespace AlgorithmsAndDataStructures.Tests
 {
@@ -158,7 +159,7 @@ namespace AlgorithmsAndDataStructures.Tests
 
         }
 
-         [Test,Category("PlusMinus")]
+         [Test]
         public void PlusMinus_Solution1_ReturnsTrue()
         {
             //Arrange
@@ -172,8 +173,8 @@ namespace AlgorithmsAndDataStructures.Tests
         }
 
         // dotnet test -v n --filter TestCategory=PlaceHolder
-        [Test,Category("PlaceHolder")]
-        public void Placeholder()
+        [Test]
+        public void StringCompareEdits_Solution1_ReturnsTrue()
         {
             //Arrange
             string input1 = "place";
@@ -184,6 +185,43 @@ namespace AlgorithmsAndDataStructures.Tests
 
             //Assert
             Assert.IsTrue(true);
+        }
+
+           // dotnet test -v n --filter TestCategory=PlaceHolder
+        [Test]
+        public void LongestSubArray_Solution1_ReturnsTrue()
+        {
+            //Test Case 1  
+            var test1 = new List<int>{1,1,1,3,3,2,2};
+            //Test Case 2
+            var test2 = new List<int>{1,2,1,2};
+            //Test Case 3
+            var test3 = new List<int>{1,2,3,4,5};
+
+            var result = LongestSubArray.longestSubarray(test1);
+
+        }
+
+         // dotnet test -v n --filter TestCategory=PlaceHolder
+        [Test,Category("PlaceHolder")]
+        public void CountOfVowels_Solution1_ReturnsTrue()
+        {
+            //Test Case 1  
+            //input azerdii  k = 5
+            //output = erdii
+
+            //azerd = 2 vowels
+            //zerdi = 2 vowels
+            //erdii  = 3 vowels
+
+            //Arrange
+            var input = "azerdii";
+
+            //Act
+            var results = FindMostVowelsInSubstring.FindSubstring(input, 5);
+
+            //Assert
+            Assert.IsTrue(results == "erdii");
         }
     }
 }
