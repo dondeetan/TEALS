@@ -8,7 +8,7 @@ namespace AlgorithmsAndDataStructures.Algorithms
     {
          public static string FindSubstring(string s, int k)
         {
-            var chararray = s.ToCharArray();
+            var chararray = s.ToLower().ToCharArray();
             var stringwithmaxvowels = String.Empty;
             Dictionary<string,int> values = new Dictionary<string, int>();
             for (int i = 0; i < s.Length - (k - 1); i++)

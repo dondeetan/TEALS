@@ -159,7 +159,7 @@ namespace AlgorithmsAndDataStructures.Tests
 
         }
 
-         [Test]
+        [Test]
         public void PlusMinus_Solution1_ReturnsTrue()
         {
             //Arrange
@@ -172,7 +172,6 @@ namespace AlgorithmsAndDataStructures.Tests
             Assert.IsTrue(results == "NEUTRAL");
         }
 
-        // dotnet test -v n --filter TestCategory=PlaceHolder
         [Test]
         public void StringCompareEdits_Solution1_ReturnsTrue()
         {
@@ -187,7 +186,6 @@ namespace AlgorithmsAndDataStructures.Tests
             Assert.IsTrue(true);
         }
 
-           // dotnet test -v n --filter TestCategory=PlaceHolder
         [Test]
         public void LongestSubArray_Solution1_ReturnsTrue()
         {
@@ -202,8 +200,7 @@ namespace AlgorithmsAndDataStructures.Tests
 
         }
 
-         // dotnet test -v n --filter TestCategory=PlaceHolder
-        [Test,Category("PlaceHolder")]
+        [Test]
         public void CountOfVowels_Solution1_ReturnsTrue()
         {
             //Test Case 1  
@@ -222,6 +219,28 @@ namespace AlgorithmsAndDataStructures.Tests
 
             //Assert
             Assert.IsTrue(results == "erdii");
+        }
+
+         // dotnet test -v n --filter TestCategory=PlaceHolder
+        [Test,Category("PlaceHolder")]
+        public void SockMerchant_Solution1_ReturnsTrue()
+        {
+            //Test Case 1  
+            //input azerdii  k = 5
+            //output = erdii
+
+            //azerd = 2 vowels
+            //zerdi = 2 vowels
+            //erdii  = 3 vowels
+
+            //Arrange
+            var input = new int[] {1,2,1,2,1,3,2};
+
+            //Act
+            var results = SockMerchant.GetSockMerchant(input);
+
+            //Assert
+            Assert.IsTrue(results == 2);
         }
     }
 }
