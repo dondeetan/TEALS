@@ -237,8 +237,8 @@ namespace AlgorithmsAndDataStructures.Tests
         }
 
          // dotnet test -v n --filter TestCategory=PlaceHolder
-        [Test,Category("PlaceHolder")]
-        public void CoutingValley_Solution1_ReturnsTrue()
+        [Test]
+        public void CountingValley_Solution1_ReturnsTrue()
         {
 
             //Arrange
@@ -250,6 +250,23 @@ namespace AlgorithmsAndDataStructures.Tests
             var results = CountingValleys.CountValleys(input2.Length,input2);
             //Assert
             Assert.IsTrue(results == 5);
+        }
+
+
+          // dotnet test -v n --filter TestCategory=PlaceHolder
+        [Test,Category("PlaceHolder")]
+        public void JumpingOnClouds_Solution1_ReturnsTrue()
+        {
+
+            //Arrange
+            var input1 = new int[]{0,0,0,1,0,0}; // 3
+            var input2 = new int[]{0, 0, 1, 0, 0, 1, 0}; // 4
+
+
+            //Act
+            var results = JumpingOnClouds.JumpClouds(input2);
+            //Assert
+            Assert.IsTrue(results == 3);
         }
     }
 }
