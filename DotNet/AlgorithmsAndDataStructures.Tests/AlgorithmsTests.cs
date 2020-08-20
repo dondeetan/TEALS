@@ -222,16 +222,9 @@ namespace AlgorithmsAndDataStructures.Tests
         }
 
          // dotnet test -v n --filter TestCategory=PlaceHolder
-        [Test,Category("PlaceHolder")]
+        [Test]
         public void SockMerchant_Solution1_ReturnsTrue()
         {
-            //Test Case 1  
-            //input azerdii  k = 5
-            //output = erdii
-
-            //azerd = 2 vowels
-            //zerdi = 2 vowels
-            //erdii  = 3 vowels
 
             //Arrange
             var input = new int[] {1,2,1,2,1,3,2};
@@ -241,6 +234,22 @@ namespace AlgorithmsAndDataStructures.Tests
 
             //Assert
             Assert.IsTrue(results == 2);
+        }
+
+         // dotnet test -v n --filter TestCategory=PlaceHolder
+        [Test,Category("PlaceHolder")]
+        public void CoutingValley_Solution1_ReturnsTrue()
+        {
+
+            //Arrange
+            //var input = "UDDDUDUU";
+            //Test Case 2: 
+            var input2 = "DDUDUDDUDDUDDUUUUDUDDDUUDDUUDDDUUDDUUUUUUDUDDDDUDDUUDUUDUDUUUDUUUUUDDUDDDDUDDUDDDDUUUUDUUDUUDUUDUDDD";
+
+            //Act
+            var results = CountingValleys.CountValleys(input2.Length,input2);
+            //Assert
+            Assert.IsTrue(results == 5);
         }
     }
 }
