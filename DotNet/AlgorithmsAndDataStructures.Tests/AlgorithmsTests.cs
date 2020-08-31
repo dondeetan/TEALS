@@ -252,9 +252,7 @@ namespace AlgorithmsAndDataStructures.Tests
             Assert.IsTrue(results == 5);
         }
 
-
-          // dotnet test -v n --filter TestCategory=PlaceHolder
-        [Test,Category("PlaceHolder")]
+        [Test]
         public void JumpingOnClouds_Solution1_ReturnsTrue()
         {
 
@@ -267,6 +265,22 @@ namespace AlgorithmsAndDataStructures.Tests
             var results = JumpingOnClouds.JumpClouds(input2);
             //Assert
             Assert.IsTrue(results == 3);
+        }
+
+          // dotnet test -v n --filter TestCategory=PlaceHolder
+        [Test,Category("PlaceHolder")]
+        public void RepeatedString_Solution1_ReturnsTrue()
+        {
+
+            //Arrange
+            var input1 = "abcac";
+            //var input = "aba";
+
+
+            //Act
+            var results = RepeatedString.GetRepeatedString(input1,10);
+            //Assert
+            Assert.IsTrue(results == 4);
         }
     }
 }
