@@ -267,8 +267,8 @@ namespace AlgorithmsAndDataStructures.Tests
             Assert.IsTrue(results == 3);
         }
 
-          // dotnet test -v n --filter TestCategory=PlaceHolder
-        [Test,Category("PlaceHolder")]
+        
+        [Test]
         public void RepeatedString_Solution1_ReturnsTrue()
         {
 
@@ -281,6 +281,26 @@ namespace AlgorithmsAndDataStructures.Tests
             var results = RepeatedString.GetRepeatedString(input1,10);
             //Assert
             Assert.IsTrue(results == 4);
+        }
+
+        // dotnet test -v n --filter TestCategory=PlaceHolder
+        [Test,Category("PlaceHolder")]
+        public void DiagonalDifference_Solution1_ReturnsTrue()
+        {
+
+            //Arrange
+            var input1 = new List<List<int>>();
+            //var input = "aba";
+            input1.Add(new List<int>{11, 2, 4});
+            input1.Add(new List<int>{4, 5, 6});
+            input1.Add(new List<int>{10, 8, -12});
+
+
+
+            //Act
+            var results = DiagonalDifference.GetDiagonalDifference(input1);
+            //Assert
+            Assert.IsTrue(results == 15);
         }
     }
 }
